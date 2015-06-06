@@ -102,6 +102,9 @@
               parent: node.$parentNodesScope,
 
               moveTo: function(parent, siblings, index) { // Move the node to a new position
+                console.log("parent", parent);
+                console.log("siblings", siblings);
+                console.log("index", index);
                 this.parent = parent;
                 this.siblings = siblings.slice(0);
                 var i = this.siblings.indexOf(this.source); // If source node is in the target nodes

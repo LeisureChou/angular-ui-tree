@@ -18,11 +18,17 @@
     };
 
     $scope.newSubItem = function(scope) {
+      console.log('scope', scope);
+      console.log('this', this);
+      console.log('mv', scope.$modelValue);
+
       var nodeData = scope.$modelValue;
-      nodeData.nodes.push({
-        id: nodeData.id * 10 + nodeData.nodes.length,
-        title: nodeData.title + '.' + (nodeData.nodes.length + 1),
-        nodes: []
+      nodeData.children.push({
+        id: scope.$modelValue.id + "." + parseInt(scope.$modelValue.children.length),
+        title: "Enter Title",
+        parentId: scope.$modelValue.id,
+        description: "Enter Description",
+        children: []
       });
     };
 
@@ -40,63 +46,27 @@
       scope.expandAll();
     };
 
-    $scope.data = [{
-      "id": 1,
-      "title": "node1",
-      "nodes": [
-        {
-          "id": 11,
-          "title": "node1.1",
-          "nodes": [
-            {
-              "id": 111,
-              "title": "node1.1.1",
-              "nodes": []
-            }
-          ]
-        },
-        {
-          "id": 12,
-          "title": "node1.2",
-          "nodes": []
-        }
-      ],
-    }, {
-      "id": 2,
-      "title": "node2",
-      "nodes": [
-        {
-          "id": 21,
-          "title": "node2.1",
-          "nodes": []
-        },
-        {
-          "id": 22,
-          "title": "node2.2",
-          "nodes": []
-        }
-      ],
-    }, {
-      "id": 3,
-      "title": "node3",
-      "nodes": [
-        {
-          "id": 31,
-          "title": "node3.1",
-          "nodes": []
-        }
-      ],
-    }, {
-      "id": 4,
-      "title": "node4",
-      "nodes": [
-        {
-          "id": 41,
-          "title": "node4.1",
-          "nodes": []
-        }
-      ],
+    // function parentId(arr) {
+
+    // }
+
+    $scope.data = [
+    {    
+          "children":[  
+             {  
+                "dateAdded":1411165752765,
+                "id":"14",
+                "index":0,
+                "parentId":"1",
+                "title":"Pandora",
+                "url":"http://www.pandora.com/",
+                "children": []
+             }],
+      "dateAdded":1433434097840,
+      "id":"0",
+      "title":"Squire's BookMarks"
     }];
+
   });
 
 })();
