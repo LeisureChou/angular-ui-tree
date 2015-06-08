@@ -21,14 +21,27 @@
       // console.log('scope', scope);
       // console.log('this', this);
       // console.log('mv', scope.$modelValue);
-
       var nodeData = scope.$modelValue;
+      var index = ""; 
+           var newIndex = function(){
+               if(!nodeData.children) {
+                 index = 0;
+                 console.log("if",index)
+                 return index;
+               }
+               else{
+                 index = nodeData.children.length;
+                 console.log("else", index)
+               }
+           };
+      newIndex();
       nodeData.children.push({
         id: scope.$modelValue.id + "." + parseInt(scope.$modelValue.children.length),
         title: "Enter Title",
         parentId: scope.$modelValue.id,
         description: "Enter Description",
-        children: []
+        children: [],
+        index: index
       });
     };
 

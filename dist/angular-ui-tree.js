@@ -156,6 +156,10 @@
                 this.source.remove();
                 this.parent.insertNode(this.index, nodeData);
                 this.source.$modelValue.parentId = this.parent.$nodeScope.$modelValue.id
+                var parent = this.parent.$modelValue;
+                 for (var i = 0; i < parent.length; i++) {
+                 parent[i].index = i;
+               };
               }
             };
           },
@@ -408,6 +412,10 @@
           if (index > -1) {
             $scope.safeApply(function() {
               $scope.$modelValue.splice(index, 1)[0];
+              var parent = $scope.$modelValue
+               for (var i = 0; i < parent.length; i++) {
+                 parent[i].index = i;
+               };
             });
             return node;
           }
