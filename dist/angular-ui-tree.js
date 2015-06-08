@@ -102,9 +102,6 @@
               parent: node.$parentNodesScope,
 
               moveTo: function(parent, siblings, index) { // Move the node to a new position
-                console.log("parent", parent);
-                console.log("siblings", siblings);
-                console.log("index", index);
                 this.parent = parent;
                 this.siblings = siblings.slice(0);
                 var i = this.siblings.indexOf(this.source); // If source node is in the target nodes
@@ -116,6 +113,7 @@
                 }
                 this.siblings.splice(index, 0, this.source);
                 this.index = index;
+                console.log();
               },
 
               parentNode: function() {
@@ -157,6 +155,7 @@
                 var nodeData = this.source.$modelValue;
                 this.source.remove();
                 this.parent.insertNode(this.index, nodeData);
+                this.source.$modelValue.parentId = this.parent.$nodeScope.$modelValue.id
               }
             };
           },

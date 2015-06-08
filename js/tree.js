@@ -18,9 +18,9 @@
     };
 
     $scope.newSubItem = function(scope) {
-      console.log('scope', scope);
-      console.log('this', this);
-      console.log('mv', scope.$modelValue);
+      // console.log('scope', scope);
+      // console.log('this', this);
+      // console.log('mv', scope.$modelValue);
 
       var nodeData = scope.$modelValue;
       nodeData.children.push({
