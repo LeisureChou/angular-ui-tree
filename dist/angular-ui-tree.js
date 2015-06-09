@@ -153,6 +153,7 @@
 
               apply: function() {
                 var nodeData = this.source.$modelValue;
+                console.log(this)
                 this.source.remove();
                 this.parent.insertNode(this.index, nodeData);
                 this.source.$modelValue.parentId = this.parent.$nodeScope.$modelValue.id
@@ -563,6 +564,14 @@
             return parentNode.depth() + 1;
           }
           return 1;
+        };
+                  // *********************************Socal Button & all button Switch********************
+        // $scope.social = function() {
+        //   $scope.socialed = false;
+        // };
+        $scope.social = true;
+        $scope.toggleButtons = function(){
+        $scope.social = !$scope.social;
         };
 
         var subDepth = 0;
