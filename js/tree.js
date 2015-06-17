@@ -57,6 +57,7 @@
        url: "Enter URL",
        index: index
      });
+
      var index = ""; 
           var newIndex = function(){
               if(!nodeData.children) {
@@ -100,6 +101,16 @@
             $scope.folder = true;
           };
         }
+
+     $scope.newImage = function(input) {
+      console.log($scope.data)
+       $scope.data[0].children.push({
+        image: input
+       });
+       $scope.imageUrl = "";
+
+     };
+
     $scope.data = [
     {    
           "children":[

@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Ui-tree</title>
+  <title>Image Selector</title>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="dist/angular-ui-tree.min.css">
   <link rel="stylesheet" href="css/demo.css">
 </head>
@@ -15,17 +15,24 @@
 </br>
 </br>
     <div class="row">
-      <div class="col-lg-4" style="max-width: 400px">
+      <div class="col-lg-4 offset1 span3" style="max-width: 400px">
         <h3>Image Selector</h3>
 </br>
 
+    <form>
+  <fieldset>
+    <label>New image</label>
+    <input type="text" ng-model="imageUrl" placeholder="Image URL">
+    <button type="submit" class="btn" ng-click="newImage(imageUrl)">Submit</button>
+  </fieldset>
+</form>
 <!-- Nested node template -->
         <script type="text/ng-template" id="nodes_renderer.html">
           <div ui-tree-handle class="tree-node tree-node-content">
 <a ng-show="node.folder"></span><h4>
             {{node.title}}</h4><hr></a>
 
-            <a><img ng-show="!node.folder" style="height: 50px;" src={{node.image}} </a>
+            <a><img ng-show="!node.folder" style="height: 70px;" src={{node.image}} </a>
 
 <!-- Child Nodes -->
             <ol ui-tree-nodes="" ng-model="node.children" ng-class="{hidden: collapsed}">
@@ -41,14 +48,16 @@
         </div>
       </div>
 
-     <!--  <div class="col-lg-6">
-        <h3>Bookmark JSON Array</h3>
+      <div class="col-lg-4 offset3 span5">
+        </br>
+        </br>
+        </br>
+        <h3>Preview</h3>
         <div class="info">
-            {{info}}
         </div>
-        <pre class="code">{{ data | json }}</pre>
+        <pre class="code" style="height: 60em;"></pre>
       </div>
-    </div> -->
+    </div>
 
   </div>
   <intercept-url pattern="/favicon.ico" access="ROLE_ANONYMOUS" />
