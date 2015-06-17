@@ -1,0 +1,70 @@
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #fff;
+	position: relative;
+	min-height: 300px;
+}
+body * {
+	font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+	font-size: 14px;
+	color: #333;
+	line-height: 22px;
+}
+#wrapper {
+    margin-top: 300px;
+	overflow: hidden;
+	background-color: #fff;
+	width: 100%;
+/*	height: 200px;*/
+	margin-top: -1px;
+	left: 0;
+	bottom: 0;
+}
+#wrapper2 {
+	background-color: #fff;
+	width: 100%;
+/*	height: 200px;*/
+	margin-top: -1px;
+	position: fixed;
+	left: 0;
+	bottom: 100px;
+}
+#carousel, #carousel2 {
+/*	border-top: 2px solid pink;*/
+}
+#carousel div, #carousel2 div {
+/*	text-align: center;*/
+	width: 200px;
+	/*height: 200px;*/
+	float: left;
+	position: relative;
+	margin-left: 50px;
+}
+#carousel div img, #carousel2 div img {
+	height: 100px;
+	width: 100px;
+}
+#carousel div span {
+	display: none;
+}
+#carousel div img:hover span {
+	background-color: #333;
+	color: #fff;
+	font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	display: inline-block;
+	width: 100px;
+	padding: 2px 0;
+	margin: 0 0 0 -50px;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	border-radius: 3px;
+}
+
+

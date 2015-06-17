@@ -8,6 +8,10 @@
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="dist/angular-ui-tree.min.css">
   <link rel="stylesheet" href="css/demo.css">
+   <script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+   <script src="carousel/jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
+   <script type="text/javascript" src="carousel/carousel.js"></script>
+   <link rel="stylesheet" type="text/css" href="carousel/carousel.css">
 </head>
 <body ng-app="treeApp">
 
@@ -15,7 +19,7 @@
 </br>
 </br>
     <div class="row">
-      <div class="col-lg-4 offset1 span3" style="max-width: 400px">
+      <div class="col-lg-4 offset0 span3" style="max-width: 400px">
         <h3>Image Selector</h3>
 </br>
 
@@ -48,14 +52,50 @@
         </div>
       </div>
 
-      <div class="col-lg-4 offset3 span5">
+      <div class="col-lg-4 offset6 span11" style="position: fixed">
         </br>
         </br>
         </br>
         <h3>Preview</h3>
+        </br>
+        </br>
+        </br></br></br></br></br></br></br></br></br></br></br></br>
         <div class="info">
-        </div>
-        <pre class="code" style="height: 60em;"></pre>
+         <div id="wrapper"> 
+   
+        <div>
+
+        <div id="carousel">
+         <div>
+           <img src="{{ data.1.children.0.image }}" width="200" height="200">
+         </div>
+         <div>
+           <img src="{{ data.1.children.1.image }}" width="200" height="200">
+         </div>
+         <div>
+           <img src="{{ data.1.children.2.image }}" width="200" height="200">
+         </div>
+         <div>
+           <img src="{{ data.1.children.3.image }}" width="200" height="200">
+         </div>
+         <div>
+           <img src="{{ data.1.children.4.image }}" width="200" height="200">
+         </div>
+         <div>
+           <img src="{{ data.1.children.5.image }}" width="200" height="200">
+         </div>
+         <div>
+           <img src="{{ data.1.children.6.image }}" width="200" height="200">
+         </div>
+         <div>
+           <img src="{{ data.1.children.7.image }}" width="200" height="200">
+         </div>
+         <div>
+           <img src="{{ data.1.children.8.image }}" width="200" height="200">
+         </div>
+     </div>
+</div>
+     </div>
       </div>
     </div>
 
