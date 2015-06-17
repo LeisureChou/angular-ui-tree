@@ -104,47 +104,14 @@
     {    
           "children":[
                     {
-                      "children": [
-                              {  
-                        "dateAdded":1429249480134,
-                        "id":"99",
-                        "index":13,
-                        "parentId":"27",
-                        "title":"AngularJS SEO with Prerender.io | Scotch",
-                        "url":"https://scotch.io/tutorials/angularjs-seo-with-prerender-io"
-                     },
-                     {  
-                        "dateAdded":1427918042058,
-                        "id":"7",
-                        "index":14,
-                        "parentId":"27",
-                        "title":"A Complete Guide to Flexbox | CSS-Tricks",
-                        "url":"https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
-                     },
-                     {  
-                        "dateAdded":1428034189158,
-                        "id":"8",
-                        "index":15,
-                        "parentId":"27",
-                        "title":"HTML Special Symbols | Sabina Nore",
-                        "url":"http://www.sabinanore.com/design/html-special-symbols/"
-                     },
-                     {  
-                        "dateAdded":1428944143603,
-                        "id":"18",
-                        "index":16,
-                        "parentId":"27",
-                        "title":"AngularJS",
-                        "url":"https://angularjs.org/"
-                     }
-                  ],
+                  "children":[],    
                   "dateAdded":1427840916950,
                   "dateGroupModified":1433275274589,
                   "id":"27",
                   "index":13,
                   "parentId":"1",
                   "title":"DevMountain",
-                  "folder": true
+                  "image": 'https://www.fashionphile.com/includes/images/thumb/BD80397/BD80397-CHANEL-Vintage-Lambskin-XL-Jumbo-Flap-Black-0.jpg'
                },  
              {  
                 "dateAdded":1411165752765,
@@ -152,45 +119,97 @@
                 "index":0,
                 "parentId":"1",
                 "title":"Dev",
-                "folder": true,
-                "children": [                     {  
-                        "dateAdded":1428077231990,
-                        "id":"95",
-                        "index":9,
-                        "parentId":"27",
-                        "title":"Compositions | IDEAVIS",
-                        "url":"http://alpha.ideavis.co/"
-                     },
-                     {  
-                        "dateAdded":1429249342332,
-                        "id":"96",
-                        "index":10,
-                        "parentId":"27",
-                        "title":"Animating AngularJS Apps: ngView | Scotch",
-                        "url":"https://scotch.io/tutorials/animating-angularjs-apps-ngview"
-                     },
-                     {  
-                        "dateAdded":1429249430625,
-                        "id":"97",
-                        "index":11,
-                        "parentId":"27",
-                        "title":"Getting Started - Webmasters — Google Developers - SEO",
-                        "url":"https://developers.google.com/webmasters/ajax-crawling/docs/getting-started"
-                     },
-                     {  
-                        "dateAdded":1429249459602,
-                        "id":"98",
-                        "index":12,
-                        "parentId":"27",
-                        "title":"How do I create an HTML snapshot? - Webmasters — Google Developers - SEO",
-                        "url":"https://developers.google.com/webmasters/ajax-crawling/docs/html-snapshot"
-                     }]
-             }],
+                "image": 'https://www.fashionphile.com/includes/images/thumb/BB88593/BW82113-Givenchy-Sugar-Goatskin-Leather-Mini-Antigona-Silver-0.jpg',
+                "children": []
+             },
+                          {  
+                "dateAdded":1411165752765,
+                "id":"14",
+                "index":0,
+                "parentId":"1",
+                "title":"Dev",
+                "image": 'https://www.fashionphile.com/includes/images/thumb/BB66318/AD65772-BALENCIAGA_A%20(1).jpg',
+                "children": []
+             },
+                          {  
+                "dateAdded":1411165752765,
+                "id":"14",
+                "index":0,
+                "parentId":"1",
+                "title":"Dev",
+                "image": 'https://www.fashionphile.com/includes/images/thumb/BW85959/BW85959-HERMES-Epsom-Sellier-Kelly-32-Brique-00.jpg',
+                "children": []
+             },
+                          {  
+                "dateAdded":1411165752765,
+                "id":"14",
+                "index":0,
+                "parentId":"1",
+                "title":"Dev",
+                "image": 'https://www.fashionphile.com/includes/images/thumb/BW76415/BW76415-ALEXANDER-MCQUEEN-Saffiano-Heroine-Open-Tote-Red-NEW-0.jpg',
+                "children": []
+             }
+             ],
       "dateAdded":1433434097840,
       "id":"0",
-      "title":"Squire's BookMarks",
+      "title":"Available Images",
       "folder": true
-    }];
+    },
+        {    
+          "children":[
+                    {
+                  "children":[],    
+                  "dateAdded":1427840916950,
+                  "dateGroupModified":1433275274589,
+                  "id":"27",
+                  "index":13,
+                  "parentId":"1",
+                  "title":"DevMountain",
+                  "image": 'https://www.fashionphile.com/includes/images/thumb/BW74793/CW74793-LANVIN-Elaphe-Snakeskin-Large-Happy-Shoulder-Bag-Bleu-Nuit--0.jpg'
+               },  
+             {  
+                "dateAdded":1411165752765,
+                "id":"14",
+                "index":0,
+                "parentId":"1",
+                "title":"Dev",
+                "image": 'https://www.fashionphile.com/includes/images/thumb/BW85134/BW85134-CHANEL-Lambskin-Quilted-Boy-Wallet-On-Chain-WOC-Navy-00.jpg',
+                "children": []
+             },
+                          {  
+                "dateAdded":1411165752765,
+                "id":"14",
+                "index":0,
+                "parentId":"1",
+                "title":"Dev",
+                "image": 'https://www.fashionphile.com/includes/images/thumb/BW87074/BW87074-GIVENCHY-Sugar-Goatskin-Medium-Antigona-Midnight-00.jpg',
+                "children": []
+             },
+                          {  
+                "dateAdded":1411165752765,
+                "id":"14",
+                "index":0,
+                "parentId":"1",
+                "title":"Dev",
+                "image": 'https://www.fashionphile.com/includes/images/thumb/BB84316/BD54384-01.jpg',
+                "children": []
+             },
+                          {  
+                "dateAdded":1411165752765,
+                "id":"14",
+                "index":0,
+                "parentId":"1",
+                "title":"Dev",
+                "image": 'https://www.fashionphile.com/includes/images/thumb/BW86919/BW86919-FENDI-Vitello-Elite-Medium-2Jours-Tote-Turquoise-NEW-00.jpg',
+                "children": []
+             }
+             ],
+      "dateAdded":1433434097840,
+      "id":"0",
+      "title":"Carousel Images",
+      "folder": true
+    }
+    ];
 
   });
 

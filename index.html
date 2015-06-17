@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>BookLet</title>
+  <title>Ui-tree</title>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -15,42 +15,23 @@
 </br>
 </br>
     <div class="row">
-      <div class="col-lg-6">
-        <h3>Bookmark Tree
-          <a href="" class="btn btn-default pull-right" ng-click="collapseAll()">Collapse all</a>
-          <a href="" class="btn btn-default pull-right" ng-click="expandAll()">Expand all</a>
-
-        </h3>
+      <div class="col-lg-4" style="max-width: 400px">
+        <h3>Image Selector</h3>
 </br>
 
 <!-- Nested node template -->
         <script type="text/ng-template" id="nodes_renderer.html">
           <div ui-tree-handle class="tree-node tree-node-content">
-<!-- Collapse -->
-            <a ng-show="node.folder" class="btn btn-success btn-xs" data-nodrag ng-click="toggle(this)" style="font-weight: 200;"><span data-nodrag class="glyphicon" ng-class="{'glyphicon-chevron-right': collapsed, 'glyphicon-chevron-down': !collapsed}"></span></a></span>
-            {{node.title}} : <a data-nodrag href="{{node.url}}">{{node.url}}</a>
-<!-- Delete -->
-            <a ng-show="node.folder === true" class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="toggleButtons(this)"><span class="glyphicon glyphicon-minus"></span></a>
-<!-- Date   -->    
-          </div>
-           <a ng-show="node.folder === true" class="btn btn-primary btn-xs" data-nodrag ng-click="remove(this)"><span class="glyphicon glyphicon-time"></span></a> 
-<!-- Total Bookmarks -->
-            <a ng-show="node.folder === true && social === false" class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="remove(this)"><span class="glyphicon glyphicon-download"></span></a>
-<!-- Total Folders -->
-            <a ng-show="node.folder === true && social === false" class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="newSubBookmark(this)" style="margin-right: 8px;"><span class="glyphicon glyphicon-upload"></span></a>
-<!-- Share -->
-            <a ng-show="node.folder === true && social === false" class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="newSubItem(this)" style="margin-right: 8px;" ng-show="node.folder === true"><span class="glyphicon glyphicon-share"></span></a> 
-<!-- Delete -->
-            <a ng-show="node.folder === true && social === true" class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="remove(this)"><span class="glyphicon glyphicon-remove"></span></a>
-<!-- New Bookmark -->
-            <a ng-show="node.folder === true && social === true" class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="newSubBookmark(this)" style="margin-right: 8px;"><span class="glyphicon glyphicon-plus"></span></a>
-<!-- New Folder -->
-            <a ng-show="node.folder === true && social === true" class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="newSubItem(this)" style="margin-right: 8px;" ng-show="node.folder === true"><span class="glyphicon glyphicon-folder-open"></span></a>
+<a ng-show="node.folder"></span><h4>
+            {{node.title}}</h4><hr></a>
+
+            <a><img ng-show="!node.folder" style="height: 50px;" src={{node.image}} </a>
+
 <!-- Child Nodes -->
-          <ol ui-tree-nodes="" ng-model="node.children" ng-class="{hidden: collapsed}">
-            <li ng-repeat="node in node.children" ui-tree-node ng-include="'nodes_renderer.html'">
-            </li>
-          </ol>
+            <ol ui-tree-nodes="" ng-model="node.children" ng-class="{hidden: collapsed}">
+              <li ng-repeat="node in node.children" ui-tree-node ng-include="'nodes_renderer.html'">
+              </li>
+            </ol>
         </script>
 <!-- Repeat code -->
         <div ui-tree id="tree-root">
@@ -60,14 +41,14 @@
         </div>
       </div>
 
-      <div class="col-lg-6">
+     <!--  <div class="col-lg-6">
         <h3>Bookmark JSON Array</h3>
         <div class="info">
             {{info}}
         </div>
         <pre class="code">{{ data | json }}</pre>
       </div>
-    </div>
+    </div> -->
 
   </div>
   <intercept-url pattern="/favicon.ico" access="ROLE_ANONYMOUS" />
